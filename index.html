@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MEHRAN // GAME DEV</title>
+<meta name="description" content="Mehran — self-taught indie game developer and first-year IT student at ADGIPS, Delhi. Six shipped games, too many prototypes.">
+<link rel="stylesheet" href="css/style.css">
+<script src="js/games.js" defer></script><script src="js/main.js" defer></script><script src="js/games-renderer.js" defer></script></head>
+<body>
+<div class="noise"></div>
+
+<header class="topbar">
+  <div class="wrap">
+    <div class="logo">MEHRAN <span>// GAME DEV</span></div>
+    <nav>
+      <a href="#games">games</a><a href="cooking.html">cooking</a><a href="#about">the boring stuff</a><a href="#contact">contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="kicker">solo indie dev / first-year IT student / Delhi / self-taught / currently shipping things</div>
+      <h1>I make games about <span class="stroke">knights</span>, chickens &amp; dish soap.</h1>
+      <p class="hero-copy">Six finished games on itch.io in the last year. Several unfinished prototypes lurking in the project folder. Zero studio experience. A frankly unreasonable amount of time spent making systems do stupid things.</p>
+      <div class="tagline-options">
+        <div class="tagline"><b>TAGLINE 01</b> — I make games about knights with railguns, chickens with shotguns, and dish soap fighting for its life.</div>
+        <div class="tagline"><b>TAGLINE 02</b> — Programmer first. Indie dev second. Professional enemy of scope creep.</div>
+        <div class="tagline"><b>TAGLINE 03</b> — Six games shipped. The proto types are multiplying. This is probably fine.</div>
+        <div class="tagline"><b>TAGLINE 04</b> — I can't decide which tagline to use.</div>
+      </div>
+    </div>
+    <aside class="hero-side">
+      <div class="screen"><img src="assets/me.jpg" alt="Mehran"><div class="tape a">NO STUDIO EXPERIENCE</div><div class="tape b">STILL SHIPPING</div></div>
+      <p>STATUS: <b>COOKING</b><br>ENGINE: UNITY<br>LANGUAGE: C#<br>ART: "LOOKING FOR A GUY" / FREE ASSETS / MIXAMO / AND WHAT NOT <br>BUG COUNT: CLASSIFIED (sorry i lost count)</p>
+    </aside>
+  </div>
+</section>
+
+<section class="flagship" id="flagship">
+  <div class="wrap">
+    <div class="section-head">
+      <div><div class="eyebrow">01 / technical centerpiece</div><h2>KNIGHT WITH 2 GUNS</h2></div>
+      <div class="section-note">A third-person action game where a knight solves problems with either a fast weak rifle or a slow strong railgun. Mostly the problems are enemies. Sometimes the problem is Unity.</div>
+    </div>
+    <div class="flagship-grid">
+      <div class="media" id="flagship-media">
+        <video autoplay muted loop playsinline>
+          <source src="assets/games/knight/knight edited flaghship1.mp4" type="video/mp4">
+        </video>
+      <!-- <div class="hud"><span class="tl">HP ████████░░</span><span class="tr">WAVE 07</span><span class="bl">SCORE 004280</span><span class="br">RAILGUN READY</span></div> -->
+      </div> 
+      <article class="flagship-info">
+        <h3>A Knight With 2 Guns: Trapped Without a Sun</h3>
+        <p><b>3D third-person action / KayKit assets / built in Unity.</b> The biggest technical project here: fast rifle + slow railgun, dash, ground-slam knockback, freelook camera and increasingly rude enemy waves.</p>
+        <div class="specs">
+          <div class="spec"><b>Combat</b><small>Rifle, railgun, dash, slam</small></div>
+          <div class="spec"><b>Waves</b><small>Speed / HP / damage scaling</small></div>
+          <div class="spec"><b>Systems</b><small>State management + spawner</small></div>
+          <div class="spec"><b>Presentation</b><small>Shaders, particles, trail, shockwave</small></div>
+          <div class="spec"><b>UI</b><small>Health, enemy stats, score, wave</small></div>
+          <div class="spec"><b>Camera</b><small>Third-person freelook setup</small></div>
+        </div>
+        <div class="tags"><span class="tag">UNITY</span><span class="tag">C#</span><span class="tag">3D</span><span class="tag">FSM</span><span class="tag">SHADERS</span><span class="tag">PARTICLES</span></div>
+        <div class="card-actions">
+          <a class="button" href="games/knight.html">VIEW PROJECT →</a>
+          <a class="button secondary" href="https://mehran13579.itch.io/a-knight-with-2-guns-trapped-without-a-sun" target="_blank" rel="noopener">ITCH.IO LINK →</a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="games" id="games">
+<div class="wrap">
+  <div class="section-head">
+    <div><div class="eyebrow">02 / shipped games</div><h2>THE OTHER<br>FIVE</h2></div>
+    <div class="section-note">Small games, jam games, a weekend itch. Finished beats perfect.</div>
+  </div>
+  <div class="game-grid" id="game-grid"></div>
+</div>
+</section>
+
+<section class="cooking" id="cooking">
+<div class="wrap">
+  <div class="section-head"><div><div class="eyebrow">03 / unfinished on purpose</div><h2>CURRENTLY<br>COOKING</h2></div><div class="section-note">The prototypes are not hidden in a dark basement. They're part of the process. Some will ship. Some will become valuable lessons in scope management.</div></div>
+  <div class="cook-grid">
+    <article class="cook"><h3>Back of a Notebook</h3><p>A 2D metroidvania made entirely from pen-drawn assets. Tutorial, one platforming section and one boss fight currently exist.</p><div class="status">STATUS // playable slice → more rooms pending</div></article>
+    <article class="cook"><h3>Desk Bud</h3><p>A desktop buddy that currently does one extremely useful thing: a 20-20-20 eye-rest timer that gently blocks input during breaks.</p><div class="status">STATUS // functional → trying not to overbuild it</div></article>
+    <article class="cook"><h3>DA Beach</h3><p>Comfy Summer Jam troll game. Mixed correct/incorrect tutorials, absurd deaths and a Pokémon-style fight sequence somewhere in the middle.</p><div class="status">STATUS // unfinished → suspiciously alive</div></article>
+  </div>
+</div>
+</section>
+
+<section class="about" id="about">
+<div class="wrap about-grid">
+  <div><div class="eyebrow">04 / the devlog entry</div><h2>THE BORING-SOUNDING STUFF</h2></div>
+  <div>
+    <div class="devlog">
+      <p><b>Dear whoever is reading this:</b></p>
+      <p>I'm a self-taught programmer and a first-year IT student at ADGIPS, Delhi. I don't have professional studio experience yet. What I do have is a suspiciously large pile of finished little games and a habit of opening Unity to "fix one thing" and emerging four hours later with a wave spawner.</p>
+      <p>I care more about making the mechanic work than pretending I made the art. A lot of the visual assets are free/asset-store stuff, Mixamo animations, or art from teammates. That's fine. My lane is the machinery underneath the joke.</p>
+    </div>
+    <div class="skill-label">the machinery</div>
+    <div class="skills">
+      <span class="skill">UNITY</span><span class="skill">C#</span><span class="skill">2D / 3D</span><span class="skill">CUSTOM MECHANICS</span><span class="skill">FSM / STATE MANAGEMENT</span><span class="skill">CHARACTER CONTROLLER</span><span class="skill">COMBAT SYSTEMS</span><span class="skill">CUSTOM SHADERS</span><span class="skill">ANIMATION STATE MACHINES</span><span class="skill">3rd PARTY ANIMATION INTEGRATION</span><span class="skill">PARTICLE EFFECTS</span><span class="skill">RIGIDBODY PHYSICS</span><span class="skill">WIN32 / DESKTOP APPS</span><span class="skill">NEW INPUT SYSTEM</span><span class="skill">CINEMACHINE</span><span class="skill">FREELOOK 3D/ CAMERA SYSTEMS</span><span class="skill">RUNTIME HUD</span><span class="skill">SOUND AND MUSIC INTEGRATION</span><span class="skill">ASSETS INTEGRATION</span><span class="skill">GAME DESIGN</span><span class="skill">GDDs (Milanote)</span><span class="skill">DIGITAL PAINTING (Krita basics)</span><span class="skill">PIXEL-ART SPRITES</span><span class="skill">GIT / GITHUB, COLLABORATIVE WORKFLOW</span>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="content">
+<div class="wrap">
+  <div class="section-head"><div><div class="eyebrow">05 / receipts</div><h2>WATCH THE<br>CHAOS HAPPEN</h2></div><div class="section-note">Build logs, clips, bugs that somehow became features, and whatever happened in Unity that day.</div></div>
+  <div class="content-grid">
+    <article class="content-card"><h3>Devlog / Instagram</h3><p>Short clips from the actual build process. Expect mechanics, experiments, progress, failures and the occasional "why is the collider doing that." (will start making these soon)</p><a href="https://www.instagram.com/marshmallow077341/" target="_blank" rel="noopener"">INSTAGRAM →</a></article>
+    <article class="content-card"><h3>Itch.io</h3><p>The six shipped games live here.</p><a href="https://mehran13579.itch.io/" target="_blank" rel="noopener">Mehran13579 →</a></article>
+  </div>
+</div>
+</section>
+</main>
+
+<footer id="contact">
+<div class="wrap">
+  <div class="footer-main">
+    <div><div class="eyebrow">06 / final boss</div><h2>HAVE A BUG?<br>MAKE IT A FEATURE.</h2></div>
+    <div style="max-width:330px;font-size:14px;line-height:1.55">If you're looking for someone who would rather build the mechanic than write three paragraphs about how innovative it is, you've found the right tab.</div>
+  </div>
+  <div class="footer-links">
+    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=mehran810428@gmail.com" target="_blank" rel="noopener">EMAIL</a>
+    <a href="https://mehran13579.itch.io/"  target="_blank" rel="noopener">ITCH.IO</a>
+    <a href="https://github.com/Mehran579"  target="_blank" rel="noopener">GITHUB</a>
+    <a href="https://www.instagram.com/marshmallow077341/"  target="_blank" rel="noopener">INSTAGRAM</a>
+    <a href="https://www.linkedin.com/in/md-mehran-83b8a8310/"  target="_blank" rel="noopener">LINKEDIN</a>
+  </div>
+  <div class="footnote"><span>MEHRAN // SELF-TAUGHT // DELHI</span><span>© 2026 // MADE WITH UNITY BRAIN ROT</span></div>
+</div>
+</footer>
+
+
+</body>
+</html>
