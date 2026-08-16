@@ -126,7 +126,22 @@ footer h2{color:var(--yellow);max-width:700px}
 .footnote{margin-top:60px;border-top:2px solid var(--white);padding-top:15px;font:400 10px var(--mono);display:flex;justify-content:space-between}
 
 @media(max-width:800px){
-  .topbar .wrap{height:auto;min-height:58px;padding:10px 0}.topbar nav{display:none}
+
+  .topbar .wrap{
+    height:auto;
+    min-height:58px;
+    padding:10px 0;
+    gap:10px;
+  }
+
+  .topbar nav{
+    display:flex;
+    gap:8px;
+    font-size:9px;
+    flex-wrap:wrap;
+    justify-content:flex-end;
+  }
+
   .hero{padding:50px 0}.hero-grid,.flagship-grid,.about-grid,.content-grid{grid-template-columns:1fr}
   .hero-side{max-width:330px;margin:10px auto 0}.game-grid{grid-template-columns:1fr}.cook-grid{grid-template-columns:1fr}
   .media{min-height:300px}.section-head{display:block}.section-note{margin-top:15px}
