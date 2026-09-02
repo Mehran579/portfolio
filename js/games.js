@@ -60,7 +60,7 @@ const games = [
     "num": "02D / Brainless GAME JAM 2026",
     "title": "Marching Buddies",
     "hook": "Five heroes. One active power. Zero time to argue about it.",
-    "media": "assets/games/marching-buddies/marching buddies lnading.mp4",
+    "media": "assets/games/marching-buddies/marching buddies landing.mp4",
     "bullets": [
       "Queue of five buddies; only the front buddy's power works.",
       "Dash/speed, high jump, invisibility, charge and strength swap on the fly.",
