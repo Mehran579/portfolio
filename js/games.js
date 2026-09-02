@@ -37,27 +37,7 @@ const games = [
     "link": "https://mehran13579.itch.io/walking-on-shells"
   },
   {
-    "num": "02C / WIND PHYSICS",
-    "title": "Wind & Physics Simulation",
-    "hook": "A real-time outdoor environment where wind, trees, leaves and physics all react together.",
-    "media": "assets/games/wind-and-physics-simulation/wind and phyiscs simulation.mp4",
-    "bullets": [
-      "Custom wind zone system with runtime strength, speed and direction controls.",
-      "Vegetation responds to wind through tree motion, grass and bush shader-driven movement.",
-      "Falling leaf particle system with wind interaction, noise and dynamic emission.",
-      "Physics objects use Rigidbody and Collider to react to gravity, terrain and wind."
-    ],
-    "tags": [
-      "UNITY",
-      "C#",
-      "PHYSICS",
-      "WIND ZONE"
-    ],
-    "link": "https://drive.google.com/drive/folders/1KovreB3hnI7imilEqqm-iBtaDjDS-G8n",
-    "linkLabel": "GOOGLE DRIVE ↗"
-  },
-  {
-    "num": "02D / Brainless GAME JAM 2026",
+    "num": "02C / Brainless GAME JAM 2026",
     "title": "Marching Buddies",
     "hook": "Five heroes. One active power. Zero time to argue about it.",
     "media": "assets/games/marching-buddies/marching buddies lnading.mp4",
@@ -75,7 +55,7 @@ const games = [
     "link": "https://mehran13579.itch.io/marching-buddies"
   },
   {
-    "num": "02E / FIRST HANDS WITH 3D",
+    "num": "02D / FIRST HANDS WITH 3D",
     "title": "Boxing 2.5D",
     "hook": "Three moves. Three enemy moves. Please do not overthink it.",
     "media": "assets/games/boxing-2-5d/boxing 25.mp4",
@@ -93,7 +73,7 @@ const games = [
     "link": "https://mehran13579.itch.io/boxing-unity-25d-2nd"
   },
   {
-    "num": "02F / ROGUELITE",
+    "num": "02E / ROGUELITE",
     "title": "Dishwasher vs Dish",
     "hook": "You are dish soap. The cutlery has unionized.",
     "media": "assets/games/dishwasher-vs-dish/dish landing.mp4",

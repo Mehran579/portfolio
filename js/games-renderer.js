@@ -36,7 +36,7 @@ function renderGames(){
         <div class="hook">${game.hook}</div>
         <ul>${game.bullets.map(b=>`<li>${b}</li>`).join("")}</ul>
         <div class="tags">${game.tags.map(t=>`<span class="tag">${t}</span>`).join("")}</div>
-        <div class="card-actions"><a class="card-link" href="games/${["inverted-101","walking-on-shells","wind-and-physics-simulation","marching-buddies","boxing-2-5d","dishwasher-vs-dish"][index]}.html">VIEW PROJECT →</a><a class="card-link secondary" href="${game.link}" target="_blank" rel="noopener">${game.linkLabel || "ITCH.IO"} ↗</a></div>
+        <div class="card-actions"><a class="card-link" href="games/${["inverted-101","walking-on-shells","marching-buddies","boxing-2-5d","dishwasher-vs-dish"][index]}.html">VIEW PROJECT →</a><a class="card-link secondary" href="${game.link}" target="_blank" rel="noopener">ITCH.IO ↗</a></div>
       </div>
     </article>`).join("");
   grid.querySelectorAll(".game-card").forEach(card=>{
