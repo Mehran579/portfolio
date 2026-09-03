@@ -40,7 +40,7 @@ const games = [
     "num": "02C / WIND PHYSICS",
     "title": "Wind & Physics Simulation",
     "hook": "A real-time outdoor environment where wind, trees, leaves and physics all react together.",
-    "media": "assets/games/wind-and-physics-simulation/wind and phyiscs simulation.mp4",
+    "media": "assets/games/wind-and-physics-simulation/wind and physics simulation.mp4",
     "bullets": [
       "Custom wind zone system with runtime strength, speed and direction controls.",
       "Vegetation responds to wind through tree motion, grass and bush shader-driven movement.",
