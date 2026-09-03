@@ -54,7 +54,7 @@ const games = [
       "WIND ZONE"
     ],
     "link": "https://drive.google.com/drive/folders/1KovreB3hnI7imilEqqm-iBtaDjDS-G8n",
-    "linkLabel": "GOOGLE DRIVE ↗"
+    "linkLabel": "GOOGLE DRIVE "
   },
   {
     "num": "02D / Brainless GAME JAM 2026",
