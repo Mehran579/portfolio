@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Farm Simulator // MEHRAN</title>
+  <meta name="description" content="Farm Simulator — a 2D farming adventure with dialogue, carrot planting, boss encounters and wave-based combat by Mehran.">
+  <link rel="stylesheet" href="../css/style.css?v=9">
+  <script src="../js/project-breakdown.js?v=5" defer></script>
+</head>
+<body>
+  <div class="noise"></div>
+
+  <header class="topbar">
+    <div class="wrap">
+      <div class="logo"><a href="../index.html" style="text-decoration:none">MEHRAN <span>// GAME DEV</span></a></div>
+      <nav>
+        <a href="../index.html#games">games</a>
+        <a href="../index.html#cooking">cooking</a>
+        <a href="../index.html#about">the boring stuff</a>
+        <a href="../index.html#contact">contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="back-row">
+    <div class="wrap"><a href="../index.html#games">← back to all games</a></div>
+  </div>
+
+  <main>
+    <section class="project-hero cyan">
+      <div class="wrap">
+        <div class="project-top">
+          <div>
+            <div class="project-label">02G / FARM ADVENTURE</div>
+            <h1 class="project-title">Farm Simulator</h1>
+            <div class="project-hook">Plant carrot seeds, talk to the NPCs, and see what takes root.</div>
+          </div>
+          <div class="project-intro">A 2D Unity adventure where farming and combat meet: gather carrot seeds through character interactions, plant them in the world, and uncover a boss encounter hidden in a special plot.</div>
+        </div>
+        <div class="project-media">
+          <video autoplay muted loop playsinline preload="metadata" aria-label="Farm Simulator gameplay">
+            <source src="../assets/games/farm-SImulator/farmSImulator.mp4" type="video/mp4">
+          </video>
+          <div class="media-empty">DROP YOUR GAMEPLAY CLIP IN<br>assets/games/farm-SImulator/</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="project-body">
+      <div class="wrap project-grid">
+        <div>
+          <div class="eyebrow">THE ACTUAL STUFF</div>
+          <h2>WHAT I BUILT</h2>
+          <div class="project-copy">
+            <p>The farming loop is tied into the adventure instead of sitting off to the side. Talk to characters to get carrot seeds, find a plot, and plant them to move the story forward.</p>
+            <p>Some planting spots do more than grow crops: a special plot kicks off a boss sequence, connecting exploration and farming with the game's combat encounters.</p>
+          </div>
+          <div class="project-tags">
+            <span class="project-tag">UNITY</span>
+            <span class="project-tag">C#</span>
+            <span class="project-tag">2D</span>
+            <span class="project-tag">DIALOGUE</span>
+            <span class="project-tag">FARMING</span>
+            <span class="project-tag">COMBAT</span>
+          </div>
+          <div class="system-list">
+            <div class="system-item">Character dialogue and interaction</div>
+            <div class="system-item">Carrot seed collection</div>
+            <div class="system-item">Planting and crop triggers</div>
+            <div class="system-item">Story and cutscene transitions</div>
+            <div class="system-item">Top-down combat and dashing</div>
+            <div class="system-item">Wave-based enemy encounters</div>
+          </div>
+          <div class="project-cta">
+            <a class="project-button" href="https://github.com/Mehran579/farm-simulator-repo-new" target="_blank" rel="noopener">VIEW ON GITHUB →</a>
+            <a class="project-button dark" href="../index.html#games">← ALL GAMES</a>
+          </div>
+        </div>
+        <aside class="project-aside">
+          <h3>THE<br>GAMEPLAY</h3>
+          <ul class="project-bullets">
+            <li>Explore a 2D world and talk with its characters.</li>
+            <li>Collect carrot seeds and plant them at soil plots.</li>
+            <li>A special planting trigger starts a boss sequence.</li>
+            <li>Fight enemies in a separate wave-based combat encounter.</li>
+            <li>Use responsive top-down movement, attacks and a dash.</li>
+          </ul>
+        </aside>
+      </div>
+      <div class="wrap" style="margin-top:100px;">
+        <div class="eyebrow">THE BREAKDOWN</div>
+        <h2>HOW I BUILT IT</h2>
+        <button class="breakdown-image-trigger" type="button" data-breakdown-image="../assets/games/farm-SImulator/farm-simulator-project-analysis.png" data-breakdown-title="Farm Simulator system diagram" aria-label="Open full Farm Simulator diagram">
+          <img src="../assets/games/farm-SImulator/farm-simulator-project-analysis.png" alt="Project analysis diagram for Farm Simulator showing farming, dialogue, exploration, and combat systems" loading="lazy">
+        </button>
+        <p class="breakdown-zoom-cue">Click the diagram to zoom and pan</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="contact">
+    <div class="wrap footer-grid">
+      <div class="logo">MEHRAN <span>// GAME DEV</span></div>
+      <div class="footer-small">One more game, then sleep. Probably.</div>
+    </div>
+  </footer>
+  <dialog class="breakdown-lightbox" aria-label="Project breakdown image viewer">
+    <div class="breakdown-lightbox-content">
+      <div class="breakdown-lightbox-toolbar">
+        <button type="button" data-breakdown-zoom="out" aria-label="Zoom out">−</button>
+        <button type="button" data-breakdown-zoom="in" aria-label="Zoom in">+</button>
+        <button type="button" data-breakdown-zoom="reset">FIT WIDTH</button>
+        <button class="breakdown-lightbox-close" type="button" data-breakdown-close>CLOSE ×</button>
+      </div>
+      <div class="breakdown-lightbox-stage" data-breakdown-stage>
+        <img alt="">
+      </div>
+      <p class="breakdown-lightbox-hint">Scroll to zoom · Drag to pan · FIT WIDTH to reset · Esc to close</p>
+    </div>
+  </dialog>
+</body>
+</html>

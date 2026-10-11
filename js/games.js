@@ -1,43 +1,29 @@
 const games = [
   {
-    "num": "02A / GEEK N JAM",
-    "title": "Inverted 101",
-    "hook": "The floor is the ceiling. The ceiling is also the floor. The rest is booby-trapped. Good luck.",
-    "media": "assets/games/inverted-101/inverted edited.mp4",
+    "num": "02A / IIIT N GAME JAM - TANTRAFIESTA ",
+    "slug": "farm-simulator",
+    "title": "Farm Simulator",
+    "hook": "A warrior must know when to put aside his jests",
+    "media": "assets/games/farm-SImulator/farmSImulator.mp4",
     "bullets": [
-      "2D side-scrolling runner with ground/air world halves.",
-      "Invert which side is real — controls flip with it.",
-      "~15 min run (only if you are good enough).", 
-      "2 cutscenes one for the ending a boss-chase."
+      "Explore story of a peasand named Edmund Chamar in a 2D topdown RPG",
+      "Weird character and goofy world interactions with a dialogue system",
+      "Don't get too cozy there's a plot twist that awaits you in the story :3."
     ],
     "tags": [
       "UNITY",
       "C#",
       "2D",
-      "TROLL RUNNER"
+      "DIALOGUE SYSTEM",
+      "TOP DOWN RPG",
+      "TOP DOWN MELEE"
     ],
-    "link": "https://mehran13579.itch.io/inverted-101"
+    "link": "https://mehran13579.itch.io/farm-simulator",
+    "gitRepo": "https://github.com/Mehran579/farm-simulator-repo-new.git",
   },
   {
-    "num": "02B / CLUB CLUB JAM JAM",
-    "title": "Walking on Shells",
-    "hook": "Chicken. Eggs. Humans. Crustaceans. Obviously an action tower defense.",
-    "media": "assets/games/walking-on-shells/walking on shells.mp4",
-    "bullets": [
-      "Shoot humans to score points, then spend them on shell bearing defenders.",
-      "Crabs, turtles, snails, pillbugs and mantis shrimp all trade differently.",
-      "NES-ish environment setting with shooter + tactical TOWER DEFENSE resource loop (Kill-Reward economy system)."
-    ],
-    "tags": [
-      "UNITY",
-      "C#",
-      "2D",
-      "ACTION TOWER DEFENSE"
-    ],
-    "link": "https://mehran13579.itch.io/walking-on-shells"
-  },
-  {
-    "num": "02C / WIND PHYSICS",
+    "num": "02B / WIND PHYSICS",
+    "slug": "wind-and-physics-simulation",
     "title": "Wind & Physics Simulation",
     "hook": "A real-time outdoor environment where wind, trees, leaves and physics all react together.",
     "media": "assets/games/wind-and-physics-simulation/wind and physics simulation.mp4",
@@ -54,10 +40,53 @@ const games = [
       "WIND ZONE"
     ],
     "link": "https://drive.google.com/drive/folders/1KovreB3hnI7imilEqqm-iBtaDjDS-G8n",
-    "linkLabel": "GOOGLE DRIVE "
+    "linkLabel": "GOOGLE DRIVE ",
+    "gitRepo": "https://github.com/Mehran579/Unity_Wind_Physics_Task_MdMehran.git",
   },
   {
-    "num": "02D / Brainless GAME JAM 2026",
+    "num": "02C / GEEK N JAM",
+    "slug": "inverted-101",
+    "title": "Inverted 101",
+    "hook": "The floor is the ceiling. The ceiling is also the floor. The rest is booby-trapped. Good luck.",
+    "media": "assets/games/inverted-101/inverted edited.mp4",
+    "bullets": [
+      "2D side-scrolling runner with ground/air world halves.",
+      "Invert which side is real — controls flip with it.",
+      "~15 min run (only if you are good enough).", 
+      "2 cutscenes one for the ending a boss-chase."
+    ],
+    "tags": [
+      "UNITY",
+      "C#",
+      "2D",
+      "TROLL RUNNER"
+    ],
+    "link": "https://mehran13579.itch.io/inverted-101",
+    "gitRepo": "https://github.com/Mehran579/Inverted-101.git"
+  },
+  {
+    "num": "02D / CLUB CLUB JAM JAM",
+    "slug": "walking-on-shells",
+    "title": "Walking on Shells",
+    "hook": "Chicken. Eggs. Humans. Crustaceans. Obviously an action tower defense.",
+    "media": "assets/games/walking-on-shells/walking on shells.mp4",
+    "bullets": [
+      "Shoot humans to score points, then spend them on shell bearing defenders.",
+      "Crabs, turtles, snails, pillbugs and mantis shrimp all trade differently.",
+      "NES-ish environment setting with shooter + tactical TOWER DEFENSE resource loop (Kill-Reward economy system)."
+    ],
+    "tags": [
+      "UNITY",
+      "C#",
+      "2D",
+      "ACTION TOWER DEFENSE"
+    ],
+    "link": "https://mehran13579.itch.io/walking-on-shells",
+    "gitRepo": "https://github.com/Mehran579/walking-on-egg-shells.git"
+  },
+  {
+    "num": "02E / Brainless GAME JAM 2026",
+    "slug": "marching-buddies",
     "title": "Marching Buddies",
     "hook": "Five heroes. One active power. Zero time to argue about it.",
     "media": "assets/games/marching-buddies/marching buddies lnading.mp4",
@@ -72,10 +101,12 @@ const games = [
       "PLATFORMER",
       "STATE LOGIC"
     ],
-    "link": "https://mehran13579.itch.io/marching-buddies"
+    "link": "https://mehran13579.itch.io/marching-buddies",
+    "gitRepo": "https://github.com/Mehran579/Marching-Buddies.git"
   },
   {
-    "num": "02E / FIRST HANDS WITH 3D",
+    "num": "02F / FIRST HANDS WITH 3D",
+    "slug": "boxing-2-5d",
     "title": "Boxing 2.5D",
     "hook": "Three moves. Three enemy moves. Please do not overthink it.",
     "media": "assets/games/boxing-2-5d/boxing 25.mp4",
@@ -90,10 +121,12 @@ const games = [
       "3D",
       "MIXAMO"
     ],
-    "link": "https://mehran13579.itch.io/boxing-unity-25d-2nd"
+    "link": "https://mehran13579.itch.io/boxing-unity-25d-2nd",
+    "gitRepo": "https://github.com/Mehran579/BOXXIng-2.5d.git"
   },
   {
-    "num": "02F / ROGUELITE",
+    "num": "02G / ROGUELITE",
+    "slug": "dishwasher-vs-dish",
     "title": "Dishwasher vs Dish",
     "hook": "You are dish soap. The cutlery has unionized.",
     "media": "assets/games/dishwasher-vs-dish/dish landing.mp4",
@@ -108,6 +141,7 @@ const games = [
       "2D",
       "ROGUELITE"
     ],
-    "link": "https://mehran13579.itch.io/dish-vs-dishwasher"
-  }
+    "link": "https://mehran13579.itch.io/dish-vs-dishwasher",
+    "gitRepo": "https://github.com/Mehran579/DishWasherVsDish.git"
+  },
 ];

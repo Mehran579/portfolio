@@ -5,8 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>MEHRAN // GAME DEV</title>
 <meta name="description" content="Mehran — self-taught indie game developer and first-year IT student at ADGIPS, Delhi. Six shipped games, too many prototypes.">
-<link rel="stylesheet" href="css/style.css">
-<script src="js/games.js" defer></script><script src="js/main.js" defer></script><script src="js/games-renderer.js" defer></script></head>
+<link rel="stylesheet" href="css/style.css?v=4">
+<script src="js/games.js?v=4" defer></script><script src="js/main.js" defer></script><script src="js/games-renderer.js?v=4" defer></script></head>
 <body>
 <div class="noise"></div>
 
@@ -25,7 +25,7 @@
     <div>
       <div class="kicker">solo indie dev / first-year IT student / Delhi / self-taught / currently shipping things</div>
       <h1>I make games about <span class="stroke">knights</span>, chickens &amp; dish soap.</h1>
-      <p class="hero-copy">Six finished games on itch.io in the last year. Several unfinished prototypes lurking in the project folder. Zero studio experience. A frankly unreasonable amount of time spent making systems do stupid things.</p>
+      <p class="hero-copy"><span data-project-count="total">Seven</span> projects in the portfolio, including the technical centerpiece. Several unfinished prototypes lurking in the project folder. Zero studio experience. A frankly unreasonable amount of time spent making systems do stupid things.</p>
       <div class="tagline-options">
         <div class="tagline"><b>TAGLINE 01</b> — I make games about knights with railguns, chickens with shotguns, and dish soap fighting for its life.</div>
         <div class="tagline"><b>TAGLINE 02</b> — Programmer first. Indie dev second. Professional enemy of scope creep.</div>
@@ -68,6 +68,7 @@
         <div class="card-actions">
           <a class="button" href="games/knight.html">VIEW PROJECT →</a>
           <a class="button secondary" href="https://mehran13579.itch.io/a-knight-with-2-guns-trapped-without-a-sun" target="_blank" rel="noopener">ITCH.IO LINK →</a>
+          <span class="button secondary" aria-disabled="true" title="Add this project's repository URL">GIT REPO →</span>
         </div>
       </article>
     </div>
@@ -77,7 +78,7 @@
 <section class="games" id="games">
 <div class="wrap">
   <div class="section-head">
-    <div><div class="eyebrow">02 / shipped games</div><h2>THE OTHER<br>SIX</h2></div>
+    <div><div class="eyebrow">02 / shipped games</div><h2>THE OTHER<br><span data-project-count="other">six</span></h2></div>
     <div class="section-note">Small games, jam games, a weekend itch. Finished beats perfect.</div>
   </div>
   <div class="game-grid" id="game-grid"></div>

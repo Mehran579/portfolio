@@ -21,11 +21,21 @@ function mediaMarkup(game){
   </div>`;
 }
 
+function numberToWords(number){
+  const ones=["zero","one","two","three","four","five","six","seven","eight","nine","ten","eleven","twelve","thirteen","fourteen","fifteen","sixteen","seventeen","eighteen","nineteen"];
+  const tens=["","","twenty","thirty","forty","fifty","sixty","seventy","eighty","ninety"];
+  if(number<20)return ones[number];
+  if(number<100)return tens[Math.floor(number/10)]+(number%10?`-${ones[number%10]}`:"");
+  if(number<1000)return `${ones[Math.floor(number/100)]} hundred${number%100?` ${numberToWords(number%100)}`:""}`;
+  return String(number);
+}
+
 function renderGames(){
   const grid=document.getElementById("game-grid");
   if(!grid)return;
   grid.innerHTML=games.map((game,index)=>`
     <article class="game-card">
+      <a class="card-overlay" href="games/${game.slug}.html" aria-label="View ${game.title} project"></a>
       <div class="game-art ${game.media?"has-media":""}">
         ${mediaMarkup(game)}
         <span class="slot game-media-placeholder">SCREENSHOT / GIF SLOT</span>
@@ -36,9 +46,21 @@ function renderGames(){
         <div class="hook">${game.hook}</div>
         <ul>${game.bullets.map(b=>`<li>${b}</li>`).join("")}</ul>
         <div class="tags">${game.tags.map(t=>`<span class="tag">${t}</span>`).join("")}</div>
-        <div class="card-actions"><a class="card-link" href="games/${["inverted-101","walking-on-shells","wind-and-physics-simulation","marching-buddies","boxing-2-5d","dishwasher-vs-dish"][index]}.html">VIEW PROJECT →</a><a class="card-link secondary" href="${game.link}" target="_blank" rel="noopener">${game.linkLabel || "ITCH.IO"} ↗</a></div>
+        <div class="card-actions"><a class="card-link" href="games/${game.slug}.html">VIEW PROJECT →</a><a class="card-link secondary" href="${game.link}" target="_blank" rel="noopener">${game.linkLabel || "ITCH.IO"} ↗</a>${game.gitRepo && game.gitRepo !== "insert repo here" ? `<a class="card-link secondary" href="${game.gitRepo}" target="_blank" rel="noopener">GIT REPO ↗</a>` : `<span class="card-link secondary" aria-disabled="true" title="Add this game's repository URL in games.js">GIT REPO</span>`}</div>
       </div>
     </article>`).join("");
+  const otherProjectCount=grid.querySelectorAll(".game-card").length;
+  const projectCounts={
+    total:otherProjectCount+Number(Boolean(document.getElementById("flagship"))),
+    other:otherProjectCount
+  };
+  document.querySelectorAll("[data-project-count]").forEach(count=>{
+    const value=projectCounts[count.dataset.projectCount];
+    if(value!==undefined){
+      const words=numberToWords(value);
+      count.textContent=words.charAt(0).toUpperCase()+words.slice(1);
+    }
+  });
   grid.querySelectorAll(".game-card").forEach(card=>{
     card.addEventListener("mouseenter",()=>{
       const icon=card.querySelector(".icon");
