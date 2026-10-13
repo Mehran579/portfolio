@@ -6,6 +6,7 @@
 <title>Wind & Physics Simulation // MEHRAN</title>
 <meta name="description" content="Wind & Physics Simulation — project page by Mehran, solo indie game developer.">
 <link rel="stylesheet" href="../css/style.css">
+<script src="../js/project-breakdown.js?v=5" defer></script>
 </head>
 <body>
 <div class="noise"></div>
@@ -75,22 +76,24 @@
   <div class="wrap" style="margin-top:100px;">
     <div class="eyebrow">THE BREAKDOWN</div>
     <h2>HOW I BUILT IT</h2>
-    <div style="text-align:center;">
-      <img src="../assets/games/wind-and-physics-simulation/mermaid-diagram.png"
-        alt="System architecture diagram for Wind & Physics Simulation showing wind zone, terrain, vegetation, particles, and rigidbody interactions"
-        style="max-width:52000px;width:100%;display:block;margin:20px auto 0;">
-    </div>
-    <div class="project-cta" style="margin-top:32px;">
-      <!-- <a class="project-button" href="https://drive.google.com/drive/folders/1KovreB3hnI7imilEqqm-iBtaDjDS-G8n" target="_blank" rel="noopener">VIEW DRIVE FOLDER →</a> -->
-      <!-- <a class="project-button dark" href="../index.html#games">← ALL GAMES</a> -->
-    </div>
-    <div style="margin-top:32px; display:flex; gap:50px; justify-content:center; font:700 12px var(--mono); text-transform:uppercase;">
-      <a href="https://drive.google.com/drive/folders/1KovreB3hnI7imilEqqm-iBtaDjDS-G8n" target="_blank" rel="noopener">View Drive Folder</a>
-      <a href="../index.html#games">All Games</a>
-    </div>
+    <button class="breakdown-image-trigger" type="button" data-breakdown-image="../assets/games/wind-and-physics-simulation/unity-wind-physics-project-analysis.png" data-breakdown-title="Wind &amp; Physics Simulation system diagram" aria-label="Open full Wind &amp; Physics Simulation diagram">
+      <img src="../assets/games/wind-and-physics-simulation/unity-wind-physics-project-analysis.png" alt="Project analysis diagram for Wind &amp; Physics Simulation showing wind control, vegetation, particles, presets, and physics objects" loading="lazy">
+    </button>
+    <p class="breakdown-zoom-cue">Click the diagram to zoom and pan</p>
   </div>
 </section>
 </main>
+
+<nav class="project-pagination wrap" aria-label="Project navigation">
+  <a class="project-pagination-link previous" href="farm-simulator.html" aria-label="Previous project: Farm Simulator" rel="prev">
+    <span class="project-pagination-arrow" aria-hidden="true">←</span>
+    <span><span class="project-pagination-label">PREVIOUS PROJECT</span><span class="project-pagination-title">Farm Simulator</span></span>
+  </a>
+  <a class="project-pagination-link next" href="inverted-101.html" aria-label="Next project: Inverted 101" rel="next">
+    <span><span class="project-pagination-label">NEXT PROJECT</span><span class="project-pagination-title">Inverted 101</span></span>
+    <span class="project-pagination-arrow" aria-hidden="true">→</span>
+  </a>
+</nav>
 
 <footer class="site-footer" id="contact">
   <div class="wrap footer-grid">
@@ -98,5 +101,19 @@
     <div class="footer-small">One more game, then sleep. Probably.</div>
   </div>
 </footer>
+<dialog class="breakdown-lightbox" aria-label="Project breakdown image viewer">
+  <div class="breakdown-lightbox-content">
+    <div class="breakdown-lightbox-toolbar">
+      <button type="button" data-breakdown-zoom="out" aria-label="Zoom out">−</button>
+      <button type="button" data-breakdown-zoom="in" aria-label="Zoom in">+</button>
+      <button type="button" data-breakdown-zoom="reset">FIT WIDTH</button>
+      <button class="breakdown-lightbox-close" type="button" data-breakdown-close>CLOSE ×</button>
+    </div>
+    <div class="breakdown-lightbox-stage" data-breakdown-stage>
+      <img alt="">
+    </div>
+    <p class="breakdown-lightbox-hint">Pinch or scroll to zoom · Drag to pan · FIT WIDTH to reset · Esc to close</p>
+  </div>
+</dialog>
 </body>
 </html>

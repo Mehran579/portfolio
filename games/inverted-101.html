@@ -6,6 +6,7 @@
 <title>Inverted 101 // MEHRAN</title>
 <meta name="description" content="Inverted 101 — project page by Mehran, solo indie game developer.">
 <link rel="stylesheet" href="../css/style.css">
+<script src="../js/project-breakdown.js?v=5" defer></script>
 </head>
 <body>
 <div class="noise"></div>
@@ -66,8 +67,27 @@
       <ul class="project-bullets"><li>Ground/air world halves that can be inverted.</li><li>Controls flip with the inversion mechanic.</li><li>Around 15 minutes of playtime.</li><li>Two cutscenes and a boss-chase ending.</li></ul>
     </aside>
   </div>
+  <div class="wrap" style="margin-top:100px;">
+    <div class="eyebrow">THE BREAKDOWN</div>
+    <h2>HOW I BUILT IT</h2>
+    <button class="breakdown-image-trigger" type="button" data-breakdown-image="../assets/games/inverted-101/inverted-101-project-analysis.png" data-breakdown-title="Inverted 101 system diagram" aria-label="Open full Inverted 101 diagram">
+      <img src="../assets/games/inverted-101/inverted-101-project-analysis.png" alt="Project analysis diagram for Inverted 101 showing its menu, world inversion, movement, hazards, death loop, and boss encounters" loading="lazy">
+    </button>
+    <p class="breakdown-zoom-cue">Click the diagram to zoom and pan</p>
+  </div>
 </section>
 </main>
+
+<nav class="project-pagination wrap" aria-label="Project navigation">
+  <a class="project-pagination-link previous" href="wind-and-physics-simulation.html" aria-label="Previous project: Wind &amp; Physics Simulation" rel="prev">
+    <span class="project-pagination-arrow" aria-hidden="true">←</span>
+    <span><span class="project-pagination-label">PREVIOUS PROJECT</span><span class="project-pagination-title">Wind &amp; Physics Simulation</span></span>
+  </a>
+  <a class="project-pagination-link next" href="walking-on-shells.html" aria-label="Next project: Walking on Shells" rel="next">
+    <span><span class="project-pagination-label">NEXT PROJECT</span><span class="project-pagination-title">Walking on Shells</span></span>
+    <span class="project-pagination-arrow" aria-hidden="true">→</span>
+  </a>
+</nav>
 
 <footer class="site-footer" id="contact">
   <div class="wrap footer-grid">
@@ -75,5 +95,19 @@
     <div class="footer-small">One more game, then sleep. Probably.</div>
   </div>
 </footer>
+<dialog class="breakdown-lightbox" aria-label="Project breakdown image viewer">
+  <div class="breakdown-lightbox-content">
+    <div class="breakdown-lightbox-toolbar">
+      <button type="button" data-breakdown-zoom="out" aria-label="Zoom out">−</button>
+      <button type="button" data-breakdown-zoom="in" aria-label="Zoom in">+</button>
+      <button type="button" data-breakdown-zoom="reset">FIT WIDTH</button>
+      <button class="breakdown-lightbox-close" type="button" data-breakdown-close>CLOSE ×</button>
+    </div>
+    <div class="breakdown-lightbox-stage" data-breakdown-stage>
+      <img alt="">
+    </div>
+    <p class="breakdown-lightbox-hint">Pinch or scroll to zoom · Drag to pan · FIT WIDTH to reset · Esc to close</p>
+  </div>
+</dialog>
 </body>
 </html>

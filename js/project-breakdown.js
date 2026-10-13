@@ -7,7 +7,9 @@
   let zoom = 1;
   let panX = 0;
   let panY = 0;
+  const pointers = new Map();
   let dragStart = null;
+  let pinchStart = null;
 
   const panBounds = () => {
     const imageHeight = image.naturalWidth
@@ -45,6 +47,35 @@
     applyTransform();
   };
 
+  const pointerMidpoint = ([first, second]) => ({
+    x: (first.x + second.x) / 2,
+    y: (first.y + second.y) / 2
+  });
+
+  const startPinch = () => {
+    const [first, second] = [...pointers.values()];
+    const midpoint = pointerMidpoint([first, second]);
+    const distance = Math.hypot(second.x - first.x, second.y - first.y);
+    pinchStart = {
+      distance: Math.max(1, distance),
+      zoom,
+      imageX: (midpoint.x - panX) / zoom,
+      imageY: (midpoint.y - panY) / zoom
+    };
+    dragStart = null;
+  };
+
+  const updateDragStart = () => {
+    const [pointerId, point] = pointers.entries().next().value;
+    dragStart = {
+      pointerId,
+      x: point.x,
+      y: point.y,
+      panX,
+      panY
+    };
+  };
+
   document.querySelectorAll(".breakdown-image-trigger[data-breakdown-image]").forEach((trigger) => {
     trigger.addEventListener("click", () => {
       image.src = trigger.dataset.breakdownImage;
@@ -52,6 +83,9 @@
       zoom = 1;
       panX = 0;
       panY = 0;
+      pointers.clear();
+      dragStart = null;
+      pinchStart = null;
       if (!dialog.open) dialog.showModal();
       applyTransform();
     });
@@ -87,28 +121,52 @@
 
   stage.addEventListener("pointerdown", (event) => {
     if (event.button !== 0) return;
-    dragStart = {
-      x: event.clientX,
-      y: event.clientY,
-      panX,
-      panY
-    };
+    const bounds = stage.getBoundingClientRect();
+    pointers.set(event.pointerId, {
+      x: event.clientX - bounds.left,
+      y: event.clientY - bounds.top
+    });
     stage.setPointerCapture(event.pointerId);
+    if (pointers.size === 1) updateDragStart();
+    else startPinch();
   });
 
   stage.addEventListener("pointermove", (event) => {
-    if (!dragStart) return;
-    panX = dragStart.panX + event.clientX - dragStart.x;
-    panY = dragStart.panY + event.clientY - dragStart.y;
+    if (!pointers.has(event.pointerId)) return;
+    const bounds = stage.getBoundingClientRect();
+    pointers.set(event.pointerId, {
+      x: event.clientX - bounds.left,
+      y: event.clientY - bounds.top
+    });
+    if (pointers.size >= 2 && pinchStart) {
+      const [first, second] = [...pointers.values()];
+      const midpoint = pointerMidpoint([first, second]);
+      zoom = Math.min(6, Math.max(1, pinchStart.zoom
+        * Math.hypot(second.x - first.x, second.y - first.y) / pinchStart.distance));
+      panX = midpoint.x - pinchStart.imageX * zoom;
+      panY = midpoint.y - pinchStart.imageY * zoom;
+      clampPan();
+      applyTransform();
+      return;
+    }
+    if (!dragStart || dragStart.pointerId !== event.pointerId) return;
+    const point = pointers.get(event.pointerId);
+    panX = dragStart.panX + point.x - dragStart.x;
+    panY = dragStart.panY + point.y - dragStart.y;
     clampPan();
     applyTransform();
   });
 
-  const stopDragging = () => {
+  const stopPointer = (event) => {
+    if (!pointers.delete(event.pointerId)) return;
     dragStart = null;
+    pinchStart = null;
+    if (pointers.size === 1) updateDragStart();
+    else if (pointers.size >= 2) startPinch();
   };
-  stage.addEventListener("pointerup", stopDragging);
-  stage.addEventListener("pointercancel", stopDragging);
+  stage.addEventListener("pointerup", stopPointer);
+  stage.addEventListener("pointercancel", stopPointer);
+  stage.addEventListener("lostpointercapture", stopPointer);
 
   dialog.addEventListener("click", (event) => {
     if (event.target === dialog) dialog.close();
