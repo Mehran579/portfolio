@@ -50,10 +50,10 @@ const games = [
     "hook": "The floor is the ceiling. The ceiling is also the floor. The rest is booby-trapped. Good luck.",
     "media": "assets/games/inverted-101/inverted edited.mp4",
     "bullets": [
-      "2D side-scrolling runner with ground/air world halves.",
-      "Invert which side is real — controls flip with it.",
-      "~15 min run (only if you are good enough).", 
-      "2 cutscenes one for the ending a boss-chase."
+      "Two vertically stacked, mirrored worlds: white on top, black below.",
+      "Only one mirrored player is active; invert to switch, and the controls flip too.",
+      "No checkpoints—hazards send you all the way back to the start. Rude.",
+      "Survive the boss-room sequence and final fight."
     ],
     "tags": [
       "UNITY",
@@ -108,11 +108,12 @@ const games = [
     "num": "02F / FIRST HANDS WITH 3D",
     "slug": "boxing-2-5d",
     "title": "Boxing 2.5D",
-    "hook": "Three moves. Three enemy moves. Please do not overthink it.",
+    "hook": "Move, jump, punch, dodge. The opponent has a plan. Sort of.",
     "media": "assets/games/boxing-2-5d/boxing 25.mp4",
     "bullets": [
       "Stripped-down boxing simulation.",
-      "3 player moves versus 3 enemy moves.",
+      "Four player controls: move and turn, jump, punch, and dodge.",
+      "Punch combos and an enemy AI with animation-triggered attacks.",
       "Mixamo animation + basic health UI."
     ],
     "tags": [
