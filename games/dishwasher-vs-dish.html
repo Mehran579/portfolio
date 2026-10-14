@@ -6,6 +6,7 @@
 <title>Dishwasher vs Dish // MEHRAN</title>
 <meta name="description" content="Dishwasher vs Dish — project page by Mehran, solo indie game developer.">
 <link rel="stylesheet" href="../css/style.css">
+<script src="../js/project-breakdown.js?v=5" defer></script>
 </head>
 <body>
 <div class="noise"></div>
@@ -66,6 +67,14 @@
       <ul class="project-bullets"><li>Bubble shots against soiled utensils.</li><li>Soap points buy fire-rate, health/heal, piercing, speed and damage.</li><li>Stun bubbles, rotating soap shield and magnet upgrades.</li><li>Bubble-radius scaling changes the feel of the weapon.</li></ul>
     </aside>
   </div>
+  <div class="wrap" style="margin-top:100px;">
+    <div class="eyebrow">THE BREAKDOWN</div>
+    <h2>HOW I BUILT IT</h2>
+    <button class="breakdown-image-trigger" type="button" data-breakdown-image="../assets/games/dishwasher-vs-dish/dishwasher-vs-dish-project-analysis.png" data-breakdown-title="Dishwasher vs Dish system diagram" aria-label="Open full Dishwasher vs Dish diagram">
+      <img src="../assets/games/dishwasher-vs-dish/dishwasher-vs-dish-project-analysis.png" alt="Project analysis diagram for Dishwasher vs Dish showing player movement, bubble shooting, dish enemies, waves, power-up picks, and upgrades" loading="lazy">
+    </button>
+    <p class="breakdown-zoom-cue">Click the diagram to zoom and pan</p>
+  </div>
 </section>
 </main>
 
@@ -86,5 +95,19 @@
     <div class="footer-small">One more game, then sleep. Probably.</div>
   </div>
 </footer>
+<dialog class="breakdown-lightbox" aria-label="Project breakdown image viewer">
+  <div class="breakdown-lightbox-content">
+    <div class="breakdown-lightbox-toolbar">
+      <button type="button" data-breakdown-zoom="out" aria-label="Zoom out">−</button>
+      <button type="button" data-breakdown-zoom="in" aria-label="Zoom in">+</button>
+      <button type="button" data-breakdown-zoom="reset">FIT WIDTH</button>
+      <button class="breakdown-lightbox-close" type="button" data-breakdown-close>CLOSE ×</button>
+    </div>
+    <div class="breakdown-lightbox-stage" data-breakdown-stage>
+      <img alt="">
+    </div>
+    <p class="breakdown-lightbox-hint">Pinch or scroll to zoom · Drag to pan · FIT WIDTH to reset · Esc to close</p>
+  </div>
+</dialog>
 </body>
 </html>

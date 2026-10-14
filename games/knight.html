@@ -8,6 +8,7 @@
   <meta name="description"
     content="A Knight With 2 Guns: Trapped Without a Sun — project page by Mehran, solo indie game developer.">
   <link rel="stylesheet" href="../css/style.css">
+  <script src="../js/project-breakdown.js?v=5" defer></script>
 </head>
 
 <body>
@@ -95,25 +96,10 @@
       <div class="wrap" style="margin-top:100px;">
         <div class="eyebrow">THE BREAKDOWN</div>
         <h2>HOW I BUILT IT</h2>
-        <div style="text-align:center;">
-          <img src="../assets/games/knight/knight breakdown 1.png"
-            alt="System architecture diagram for A Knight With 2 Guns showing wave system, entities, player states and enemy behaviour"
-            style="max-width:52000px;width:100%;display:block;margin:20px auto 0;">
-        </div>
-        <div class="project-cta" style="margin-top:32px;">
-          <!-- <a class="project-button" href="https://mehran13579.itch.io/a-knight-with-2-guns-trapped-without-a-sun"
-            target="_blank" rel="noopener">PLAY ON ITCH.IO →</a> -->
-          <!-- <a class="project-button dark" href="../index.html#games">← ALL GAMES</a> -->
-          <!-- <div class="wrap"><a href="https://mehran13579.itch.io/a-knight-with-2-guns-trapped-without-a-sun"
-              target="_blank" rel="noopener">Play on Itch.Io →</a></div>
-          <div class="wrap"><a href="../index.html#games">← All Games</a></div> -->
-        </div>
-        <div
-          style="margin-top:32px; display:flex; gap:50px; justify-content:center; font:700 12px var(--mono); text-transform:uppercase;">
-          <a href="https://mehran13579.itch.io/a-knight-with-2-guns-trapped-without-a-sun" target="_blank"
-            rel="noopener">Play on Itch.Io </a>
-          <a href="../index.html#games"> All Games</a>
-        </div>
+        <button class="breakdown-image-trigger" type="button" data-breakdown-image="../assets/games/knight/knight-project-analysis.png" data-breakdown-title="A Knight With 2 Guns system diagram" aria-label="Open full A Knight With 2 Guns diagram">
+          <img src="../assets/games/knight/knight-project-analysis.png" alt="Project analysis diagram for A Knight With 2 Guns showing menu and controls, weapons and abilities, enemy AI, wave scaling, HUD, and game-over flow" loading="lazy">
+        </button>
+        <p class="breakdown-zoom-cue">Click the diagram to zoom and pan</p>
       </div>
     </section>
   </main>
@@ -135,6 +121,20 @@
       <div class="footer-small">One more game, then sleep. Probably.</div>
     </div>
   </footer>
+  <dialog class="breakdown-lightbox" aria-label="Project breakdown image viewer">
+    <div class="breakdown-lightbox-content">
+      <div class="breakdown-lightbox-toolbar">
+        <button type="button" data-breakdown-zoom="out" aria-label="Zoom out">−</button>
+        <button type="button" data-breakdown-zoom="in" aria-label="Zoom in">+</button>
+        <button type="button" data-breakdown-zoom="reset">FIT WIDTH</button>
+        <button class="breakdown-lightbox-close" type="button" data-breakdown-close>CLOSE ×</button>
+      </div>
+      <div class="breakdown-lightbox-stage" data-breakdown-stage>
+        <img alt="">
+      </div>
+      <p class="breakdown-lightbox-hint">Pinch or scroll to zoom · Drag to pan · FIT WIDTH to reset · Esc to close</p>
+    </div>
+  </dialog>
 </body>
 
 </html>
