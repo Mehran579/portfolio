@@ -3,20 +3,20 @@ const games = [
     "num": "02A / IIIT N GAME JAM - TANTRAFIESTA ",
     "slug": "farm-simulator",
     "title": "Farm Simulator",
-    "hook": "A warrior must know when to put aside his jests",
+    "hook": "A quiet little farming RPG. Definitely nothing strange happening here.",
     "media": "assets/games/farm-SImulator/farmSImulator.mp4",
     "bullets": [
-      "Explore story of a peasand named Edmund Chamar in a 2D topdown RPG",
-      "Weird character and goofy world interactions with a dialogue system",
-      "Don't get too cozy there's a plot twist that awaits you in the story :3."
+      "Leave the farmhouse to explore fields, meet villagers and plant carrot seeds.",
+      "Planting at a special plot triggers the carrot boss fight.",
+      "The strange encounters escalate into a top-down, wave-based combat finale."
     ],
     "tags": [
       "UNITY",
       "C#",
       "2D",
-      "DIALOGUE SYSTEM",
-      "TOP DOWN RPG",
-      "TOP DOWN MELEE"
+      "NARRATIVE RPG",
+      "FARMING ADVENTURE",
+      "ACTION COMBAT"
     ],
     "link": "https://mehran13579.itch.io/farm-simulator",
     "gitRepo": "https://github.com/Mehran579/farm-simulator-repo-new.git",
@@ -44,7 +44,28 @@ const games = [
     "gitRepo": "https://github.com/Mehran579/Unity_Wind_Physics_Task_MdMehran.git",
   },
   {
-    "num": "02C / GEEK N JAM",
+    "num": "02C / NEON ARENA ROGUELITE",
+    "slug": "loots",
+    "title": "Loots",
+    "hook": "Draw a line. Close the loop. Turn the arena against its enemies.",
+    "media": "assets/games/loots/loots.mp4",
+    "bullets": [
+      "Slash and dash to leave energy trails across the arena.",
+      "Connect trails into circuits that damage enemies caught inside.",
+      "Clear escalating waves and choose upgrades between rounds."
+    ],
+    "tags": [
+      "UNITY",
+      "C#",
+      "2D",
+      "ACTION ROGUELITE",
+      "CIRCUIT COMBAT"
+    ],
+    "link": "https://mehran13579.itch.io/loots-updated",
+    "gitRepo": "https://github.com/Mehran579/loots2.git"
+  },
+  {
+    "num": "02D / GEEK N JAM",
     "slug": "inverted-101",
     "title": "Inverted 101",
     "hook": "The floor is the ceiling. The ceiling is also the floor. The rest is booby-trapped. Good luck.",
@@ -65,7 +86,7 @@ const games = [
     "gitRepo": "https://github.com/Mehran579/Inverted-101.git"
   },
   {
-    "num": "02D / CLUB CLUB JAM JAM",
+    "num": "02E / CLUB CLUB JAM JAM",
     "slug": "walking-on-shells",
     "title": "Walking on Shells",
     "hook": "Chicken. Eggs. Humans. Crustaceans. Obviously an action tower defense.",
@@ -85,7 +106,7 @@ const games = [
     "gitRepo": "https://github.com/Mehran579/walking-on-egg-shells.git"
   },
   {
-    "num": "02E / Brainless GAME JAM 2026",
+    "num": "02F / Brainless GAME JAM 2026",
     "slug": "marching-buddies",
     "title": "Marching Buddies",
     "hook": "Five heroes. One active power. Zero time to argue about it.",
@@ -105,7 +126,7 @@ const games = [
     "gitRepo": "https://github.com/Mehran579/Marching-Buddies.git"
   },
   {
-    "num": "02F / FIRST HANDS WITH 3D",
+    "num": "02G / FIRST HANDS WITH 3D",
     "slug": "boxing-2-5d",
     "title": "Boxing 2.5D",
     "hook": "Move, jump, punch, dodge. The opponent has a plan. Sort of.",
@@ -126,7 +147,7 @@ const games = [
     "gitRepo": "https://github.com/Mehran579/BOXXIng-2.5d.git"
   },
   {
-    "num": "02G / ROGUELITE",
+    "num": "02H / ROGUELITE",
     "slug": "dishwasher-vs-dish",
     "title": "Dishwasher vs Dish",
     "hook": "You are dish soap. The cutlery has unionized.",
