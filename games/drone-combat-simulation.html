@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Drone Sim // MEHRAN</title>
+<meta name="description" content="A Unity 3D drone combat prototype with physics-based flight, missile attacks, explosion forces, and NavMesh enemy AI.">
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<div class="noise"></div>
+
+<header class="topbar">
+  <div class="wrap">
+    <div class="logo"><a href="../index.html" style="text-decoration:none">MEHRAN <span>// GAME DEV</span></a></div>
+    <nav>
+      <a href="../index.html#games">games</a>
+      <a href="../index.html#cooking">cooking</a>
+      <a href="../index.html#about">the boring stuff</a>
+      <a href="../index.html#contact">contact</a>
+    </nav>
+  </div>
+</header>
+
+<div class="back-row">
+  <div class="wrap"><a href="../index.html#games">← back to all games</a></div>
+</div>
+
+<main>
+<section class="project-hero red">
+  <div class="wrap">
+    <div class="project-top">
+      <div>
+        <div class="project-label">02G / UNITY SKILL ASSESSMENT</div>
+        <h1 class="project-title">Drone Sim</h1>
+        <div class="project-hook">A physics-driven drone, a missile launcher, and soldiers who shoot back.</div>
+      </div>
+      <div class="project-intro">A 3D Unity prototype built for the iPage UM Services Unity Skill Assessment. Pilot a drone through a test arena, engage patrolling enemy soldiers, and use missile explosions to send nearby physics objects flying.</div>
+    </div>
+    <div class="project-media">
+      <video autoplay muted loop playsinline preload="metadata" aria-label="Drone combat prototype gameplay">
+        <source src="../assets/games/drone sim/drone sim.mp4" type="video/mp4">
+      </video>
+      <div class="media-empty">DEMO VIDEO<br>assets/games/drone sim/drone sim.mp4</div>
+    </div>
+  </div>
+</section>
+
+<section class="project-body">
+  <div class="wrap project-grid">
+    <div>
+      <div class="eyebrow">THE ACTUAL STUFF</div>
+      <h2>WHAT I BUILT</h2>
+      <div class="project-copy">
+        <p>The drone uses Rigidbody forces for flight. WASD movement is relative to the camera, Q and E control altitude, and procedural pitch and roll react to movement input. The follow camera keeps the drone in view as it turns and moves through the arena.</p>
+        <p>Fire missiles with a cooldown. Each launch applies recoil to the drone; on impact, the missile creates an explosion that pushes nearby physics objects. NavMesh-driven soldiers patrol waypoints, detect the player with range and line-of-sight checks, and fire when the drone comes into range.</p>
+      </div>
+      <div class="project-tags">
+        <span class="project-tag">UNITY</span>
+        <span class="project-tag">C#</span>
+        <span class="project-tag">3D</span>
+        <span class="project-tag">RIGIDBODY PHYSICS</span>
+        <span class="project-tag">NAVMESH</span>
+        <span class="project-tag">FINITE STATE MACHINE</span>
+        <span class="project-tag">MISSILE COMBAT</span>
+      </div>
+      <div class="system-list">
+        <div class="system-item">Camera-relative drone flight</div>
+        <div class="system-item">Vertical thrust and procedural tilt</div>
+        <div class="system-item">Missile firing cooldown and recoil</div>
+        <div class="system-item">Impact explosions and radial force</div>
+        <div class="system-item">Waypoint patrol and player detection</div>
+        <div class="system-item">Enemy patrol, shoot and death states</div>
+      </div>
+      <div class="project-note">ASSESSMENT PROTOTYPE // No win/lose loop or HUD is implemented yet. Enemy bullets are visual and do not damage the player.</div>
+      <div class="project-cta">
+        <a class="project-button" href="https://github.com/Mehran579/unity-skill-assement-task-mehran" target="_blank" rel="noopener">VIEW SOURCE ON GITHUB →</a>
+        <a class="project-button dark" href="https://drive.google.com/drive/folders/1wuJosq86xEcOhkyv9n3pV3x0jXEovHQY?usp=sharing" target="_blank" rel="noopener">PROJECT FILES &amp; DEMO →</a>
+      </div>
+    </div>
+    <aside class="project-aside">
+      <h3>THE<br>CONTROLS</h3>
+      <ul class="project-bullets">
+        <li>WASD: camera-relative horizontal flight.</li>
+        <li>Q / E: ascend and descend.</li>
+        <li>Mouse: look around with the follow camera.</li>
+        <li>Space: fire a missile, subject to its cooldown.</li>
+        <li>Restart: reload the current scene.</li>
+      </ul>
+    </aside>
+  </div>
+</section>
+</main>
+
+<nav class="project-pagination wrap" aria-label="Project navigation">
+  <a class="project-pagination-link previous" href="marching-buddies.html" aria-label="Previous project: Marching Buddies" rel="prev">
+    <span class="project-pagination-arrow" aria-hidden="true">←</span>
+    <span><span class="project-pagination-label">PREVIOUS PROJECT</span><span class="project-pagination-title">Marching Buddies</span></span>
+  </a>
+  <a class="project-pagination-link next" href="boxing-2-5d.html" aria-label="Next project: Boxing 2.5D" rel="next">
+    <span><span class="project-pagination-label">NEXT PROJECT</span><span class="project-pagination-title">Boxing 2.5D</span></span>
+    <span class="project-pagination-arrow" aria-hidden="true">→</span>
+  </a>
+</nav>
+
+<footer class="site-footer" id="contact">
+  <div class="wrap footer-grid">
+    <div class="logo">MEHRAN <span>// GAME DEV</span></div>
+    <div class="footer-small">One more game, then sleep. Probably.</div>
+  </div>
+</footer>
+</body>
+</html>

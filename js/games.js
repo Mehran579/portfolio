@@ -126,7 +126,30 @@ const games = [
     "gitRepo": "https://github.com/Mehran579/Marching-Buddies.git"
   },
   {
-    "num": "02G / FIRST HANDS WITH 3D",
+    "num": "02G / UNITY SKILL ASSESSMENT",
+    "slug": "drone-combat-simulation",
+    "title": "Drone Sim",
+    "hook": "Pilot a physics-driven drone. Patrols are optional; missiles are not.",
+    "media": "assets/games/drone sim/drone sim.mp4",
+    "bullets": [
+      "Fly with camera-relative movement, vertical thrust and procedural banking.",
+      "Fire cooldown-limited missiles with recoil and radial explosion physics.",
+      "NavMesh soldiers patrol, spot the drone and shoot back."
+    ],
+    "tags": [
+      "UNITY",
+      "C#",
+      "3D",
+      "RIGIDBODY PHYSICS",
+      "NAVMESH AI",
+      "MISSILE COMBAT"
+    ],
+    "link": "https://drive.google.com/drive/folders/1wuJosq86xEcOhkyv9n3pV3x0jXEovHQY?usp=sharing",
+    "linkLabel": "PROJECT FILES",
+    "gitRepo": "https://github.com/Mehran579/unity-skill-assement-task-mehran.git"
+  },
+  {
+    "num": "02H / FIRST HANDS WITH 3D",
     "slug": "boxing-2-5d",
     "title": "Boxing 2.5D",
     "hook": "Move, jump, punch, dodge. The opponent has a plan. Sort of.",
@@ -147,7 +170,7 @@ const games = [
     "gitRepo": "https://github.com/Mehran579/BOXXIng-2.5d.git"
   },
   {
-    "num": "02H / ROGUELITE",
+    "num": "02I / ROGUELITE",
     "slug": "dishwasher-vs-dish",
     "title": "Dishwasher vs Dish",
     "hook": "You are dish soap. The cutlery has unionized.",

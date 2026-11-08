@@ -105,6 +105,7 @@ h2{font:900 clamp(45px,7vw,88px)/.82 var(--display);margin:0;text-transform:uppe
 
 .about{background:var(--ink);color:var(--white)}
 .about-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:45px}
+.about-skills{grid-column:1/-1}
 .about h2{color:var(--yellow)}
 .devlog{border:var(--border);padding:20px;background:var(--yellow);color:var(--ink);box-shadow:var(--shadow);transform:rotate(-1deg)}
 .devlog p{font:500 13px/1.6 var(--mono)}
